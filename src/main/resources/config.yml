@@ -1,0 +1,36 @@
+# Global multiplier applied to the normal vanilla break progress of managed wood blocks.
+#
+# Vanilla logs are broken by hand in about 3 seconds.
+# Stone by hand is much slower: about 7.5 seconds.
+# 3 / 7.5 = 0.4, so 0.4 is a good default if you want
+# "wood by hand feels like stone by hand".
+#
+# The same multiplier is also applied to axes, so axe tiers keep their vanilla advantage.
+break-speed-multiplier: 0.4
+
+# How far the player may be from the target block while the custom break is active.
+max-break-distance: 6.0
+
+# If true, only survival players are handled.
+# Creative is always ignored.
+only-handle-survival: true
+
+# Optional debug messages to console.
+debug: false
+
+# What counts as a tree wood block.
+affected-blocks:
+  logs: true
+  woods: true
+  stripped-logs-and-woods: true
+  nether-stems-and-hyphae: true
+  bamboo-block: true
+  mangrove-roots: false
+  leaves: false
+
+# Advanced per-material overrides.
+# Put Bukkit material names here if you want to force include extra blocks.
+extra-materials: []
+
+# Or force-exclude specific materials.
+excluded-materials: []

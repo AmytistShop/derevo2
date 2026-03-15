@@ -1,0 +1,18 @@
+name: WoodBreakSlowdown
+version: 1.0.0
+main: io.github.bannovsasa277.woodslowdown.WoodBreakSlowdownPlugin
+api-version: '1.21'
+author: OpenAI
+website: https://openai.com
+softdepend:
+  - Geyser-Spigot
+  - floodgate
+commands:
+  woodbreakslowdown:
+    description: Reloads the WoodBreakSlowdown config.
+    usage: /woodbreakslowdown reload
+    permission: woodbreakslowdown.admin
+permissions:
+  woodbreakslowdown.admin:
+    description: Allows reloading the plugin config.
+    default: op
